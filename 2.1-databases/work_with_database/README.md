@@ -1,3 +1,14 @@
+Для запуска задания необходимо в `settings.py -> DATABASES -> 'PASSWORD'` прописать свой пароль от postgres. Далее выполнить команды в консоли:  
+```
+createdb -U postgres netology_import_phones
+python manage.py makemigrations
+python manage.py migrate
+python manage.py import_phones
+python manage.py runserver
+```
+
+После чего перейти на http://127.0.0.1:8000/  
+
 # Выгрузка каталога товаров из csv-файла с сохранением всех позиций в базе данных
 
 ## Задание
